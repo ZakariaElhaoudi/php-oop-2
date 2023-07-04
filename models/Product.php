@@ -5,13 +5,15 @@ class Product {
     private $name;
     private $price;
     private $description;
-    private $category;
+    
+    private Category $category;
 
-    public function __construct($name, $price, $description, $category) {
+    public function __construct($name, $price, $description, Category $category) {
 
         $this -> setName($name);
         $this -> setPrice($price);
         $this -> setDescription($description);
+        
         $this -> setCategory($category);
     }
 
@@ -55,7 +57,3 @@ class Product {
          $this -> category = $category;
     }
 }
-
-$prod1 = new Product("Crocchette per cani", 10.99, "Cibo per cani di tutte le razze", "Cani");
-$prod2 = new Product("Snack per cani", 15.00, "Biscotti e ossi per cani di tutte le razze", "Cani");
-$prod3 = new Product("Snack per gatti", 10.99, "Snack per gatti", "Gatti");

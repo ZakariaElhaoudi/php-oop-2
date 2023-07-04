@@ -2,21 +2,21 @@
 
 class Category {
 
-    private $nameCategory;
+    private $name;
 
-    public function __construct($nameCategory) {
+    public function __construct($name) {
 
-        $this -> setNameCategory($nameCategory);
+        $this -> setName($name);
     }
 
-    public function getNameCategory() {
+    public function getName() {
         
-        return $this -> nameCategory;
+        return $this -> name;
     }
 
-    public function setNameCategory($nameCategory) {
+    public function setName($name) {
 
-         $this -> nameCategory = $nameCategory;
+         $this -> name = $name;
     }
 }
 ?>
